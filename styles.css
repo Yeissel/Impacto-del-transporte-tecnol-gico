@@ -1,0 +1,173 @@
+/* Contenedor principal del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+.carousel-item img {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el área del contenedor sin deformarse */
+}
+
+/* Texto fijo sobre el carrusel */
+.fixed-text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: #2e2e2e54;
+}
+.fixed-text h1 {
+    color: white;
+}
+/* Estilos de la sección de transporte */
+.transport-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.transport-item {
+    flex: 1 1 calc(33.33% - 40px);
+    text-align: center;
+    padding: 10px;
+}
+
+.transport-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 35px;
+    color: #1e5c12;
+}
+h2{
+    font-size: 35px;
+    color: #1e5c12;
+}
+p {
+    font-size: 20px;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.footer-info, .footer-links, .footer-social {
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social a {
+    color: white;  /* Cambia el color a tu preferencia */
+    font-size: 1.8rem; /* Ajusta el tamaño */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #28a745; /* Cambia el color cuando pases el mouse (ejemplo: verde) */
+}
+
+/* Barra lateral */
+.related-content {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.related-content h3 {
+    font-size: 18px;
+    color: #000;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.related-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.related-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.related-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.related-content a {
+    text-decoration: none;
+    color: #1e5c12;
+    font-size: 14px;
+}
+
+.related-content a:hover {
+    text-decoration: underline;
+}
+/* Estilos para las Cards de Tipos de Transportes Tecnológicos */
+.card {
+    border: 1px solid #ddd; /* Borde suave para las cards */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación de hover */
+    min-height: 380px; /* Establece una altura mínima para que todas las cards tengan un tamaño consistente */
+    
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevar la card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.card-img-top {
+    height: 200px; /* Mantén la altura fija */
+    width: 100%; /* Asegúrate de que la imagen se ajuste a la anchura de la card */
+    object-fit: cover; /* La imagen cubrirá completamente el área asignada */
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
